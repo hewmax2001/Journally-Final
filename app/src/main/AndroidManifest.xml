@@ -15,6 +15,9 @@
         android:theme="@style/Theme.TheStubToEndAllStubs"
         tools:targetApi="31">
         <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
             android:name=".EntryContentActivity"
             android:exported="false" />
         <activity
