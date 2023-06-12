@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
 
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ public class JournalMenuActivity extends AppCompatActivity {
 
     private RecyclerView recEntries;
     private ImageButton btnAddEntry;
+    private EditText txtDesc;
     private static final String DEFAULT_TITLE = "New Entry";
     private static final String DEFAULT_CONTENT = "Some content";
 
@@ -34,9 +36,20 @@ public class JournalMenuActivity extends AppCompatActivity {
         setUpRecycler();
     }
 
+    @Override
+    public void finish() {
+        super.finish();
+        String desc = txtDesc.getText().toString();
+        JController.getCurrentJournal().setDescription(desc);
+        JController.insertJournal(JController.getCurrentUser(), JController.getCurrentJournal());
+    }
+
     private void setElements() {
         recEntries = findViewById(R.id.rec_entries);
         btnAddEntry = findViewById(R.id.btn_add_entry);
+        txtDesc = findViewById(R.id.txt_journal_view_desc);
+
+        txtDesc.setText(JController.getCurrentJournal().getDescription());
 
         setEvents();
     }
