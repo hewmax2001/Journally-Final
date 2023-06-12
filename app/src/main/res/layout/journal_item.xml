@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:id="@+id/car_journal"
+    android:background="@drawable/note">
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_marginRight="-20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txt_journal_title"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Journal Name"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_journal_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="This is part of a journal I'm testing how long it could be and what text size will be."
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+        <ImageButton
+            android:id="@+id/btn_delete_journal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

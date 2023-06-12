@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "865052254748",
+    "firebase_url": "https://journallybackendtest-default-rtdb.firebaseio.com",
+    "project_id": "journallybackendtest",
+    "storage_bucket": "journallybackendtest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865052254748:android:07719f4b87e1acdcc675d9",
+        "android_client_info": {
+          "package_name": "com.example.journallybackendtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865052254748-3q6cdma4nrq6dc4qr31g53omft1c8v8f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzfxwG5hxpT8ahpuDGNSpVa2ef5_pnaj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865052254748-3q6cdma4nrq6dc4qr31g53omft1c8v8f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865052254748:android:10f1fd8bc10f998cc675d9",
+        "android_client_info": {
+          "package_name": "com.example.thestubtoendallstubs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865052254748-3q6cdma4nrq6dc4qr31g53omft1c8v8f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzfxwG5hxpT8ahpuDGNSpVa2ef5_pnaj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865052254748-3q6cdma4nrq6dc4qr31g53omft1c8v8f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
