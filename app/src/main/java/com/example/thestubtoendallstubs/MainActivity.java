@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         JController.start(getApplicationContext());
         setElements();
-        //stubFunction();
     }
 
     protected void onResume() {
@@ -81,27 +80,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
-    /*private void stubFunction() {
-        JController.start(getApplicationContext());
-        String username = "test";
-        String password = "test";
-        //register(username, password);
-
-        JController.getUserByUsername(new Callback() {
-            @Override
-            public void onCallback(DataSnapshot snap) {
-                User user = snap.getValue(User.class);
-                login(user);
-            }
-
-            @Override
-            public void onFailure() {
-                Toast.makeText(getApplicationContext(), "This user does not exist.", Toast.LENGTH_SHORT).show();
-            }
-        }, username, password);
-    }*/
 
     private void login(User user) {
         JController.setCurrentUser(user);
